@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@300&display=swap');
+
+.App {
+  margin: auto;
+  max-width: 992px;
+  min-height: 100vh;
+  width: 95%;
+  
+}
+
+ul{
+  list-style: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Ubuntu;
+}
+
+body{
+  background-image: url(/src/assests/images/wpWorld.jpg);
+  padding: 10px;
+}
+.container-header-background{
+  background-size: cover ;
+  background-image: url(/src/assests/images/banner.png) ;
+  height: 200px;
+  width: 100%;
+  background-position: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 5px #0cee2e;
+}
+
+
+.search-bar{
+  position: relative;
+}
+
+.search-bar input{
+  border: 2px solid rgb(140, 236, 140);
+  box-shadow: 0px 0px 11px 0px rgb(140, 236, 140);
+  border-radius: 15px;
+  height: 30px;
+  margin-bottom: 5px;
+  width: 275px;
+  background-color: #44acbe;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(88, 30, 88);
+}
+.search-bar button{
+  position: absolute;
+  right: 0px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  width: 30px;
+  background-color: #0cee2e;
+}
+
+.container-location-info{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(88, 30, 88, 0.61);
+  box-shadow: 0px 0px 5px 5px rgba(88, 30, 88, 0.892);
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  font-size: 13px;
+  
+}
+
+.location-info-name{
+  margin-bottom: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.location-info-name h1{
+  border-bottom: 2px solid #44acbe;
+  display: inline-block;
+}
+.location-info-general{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-residentInfo{
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.container-residentInfo h3{
+  border-bottom: 2px solid #44acbe;
+}
+.card-section{
+  margin-top: 10px;
+  background-color: rgba(88, 30, 88, 0.61);
+  box-shadow: 0px 0px 5px 5px rgba(88, 30, 88, 0.892);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.pagination-container ul li a{
+  text-decoration: none;
+  color:white ;
+}
+.pagination-container ul li a:hover{
+  text-decoration: none;
+}
+.pagination-container ul li{
+  font-size: 20px;
+  border: 2px solid white;
+  padding: 1px 6px;
+  border-radius: 3px; 
+}
+.pagination-container ul li:hover{
+  border: 1px solid #0cee2e;
+  box-shadow: 0px 0px 5px 5px rgb(140, 236, 140);;
+  background-color: #0cee2eb3
+}
+.pagination-container ul{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  list-style: none;
+  
+  padding: 5px;
+  border-radius: 15px;
+  
+}
+.pagination-container{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  
+  background-color: rgba(88, 30, 88, 0.61);
+  box-shadow: 0px 0px 5px 5px rgba(88, 30, 88, 0.892);
+  border-radius: 15px;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loader-h1{
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+
+}
+.loader{
+  width: 100%;
+  
+  border-radius: 50%; 
+  margin-top: 60%;
+}
+
+@media screen and (min-width: 600px) {
+  .card-section {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+  
+  }
+  .loader{
+    width: 100%;
+    
+    border-radius: 50%; 
+    margin-top: 10px;
+  }
+ 
+}
