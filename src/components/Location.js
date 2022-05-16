@@ -81,7 +81,7 @@ const Location = () => {
 
                     
                         <div className='search-bar'>
-                            <input type="text"  placeholder='Type ID (1 - 126)' onChange={e => setId(e.target.value)} value={id}/>
+                            <input type="text" placeholder='Type ID (1 - 126)' onChange={e => setId(e.target.value)} value={id}/>
                             <button onClick={searchId}><i className="fa-solid fa-magnifying-glass"></i></button>
                             
                         </div>
